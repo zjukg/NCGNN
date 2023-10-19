@@ -1,0 +1,9 @@
+{
+        "exp_name": "motion_exp",
+        "batch_size": 100,
+        "epochs": 1500,
+        "max_training_samples": 200,
+        "data_dir": "spatial_graph/motion",
+        "delta_frame": 30,
+        "alignment_loss_weight": 0.01
+}

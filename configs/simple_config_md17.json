@@ -1,0 +1,10 @@
+{
+        "exp_name": "md17_exp",
+        "batch_size": 100,
+        "epochs": 1000,
+        "max_training_samples": 500,
+        "data_dir": "spatial_graph/md17",
+        "delta_frame": 3000,
+        "mol": "aspirin",
+        "alignment_loss_weight": 0.1
+}

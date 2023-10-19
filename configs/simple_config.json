@@ -1,0 +1,10 @@
+{
+        "exp_name": "simulation_exp",
+        "batch_size": 200,
+        "epochs": 600,
+        "max_training_samples": 500,
+        "data_dir": "spatial_graph/n_body_system/dataset/data",
+        "n_isolated": 1,
+        "n_stick": 2,
+        "n_hinge": 0
+}

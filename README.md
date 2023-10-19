@@ -15,7 +15,7 @@ Hi, this repository is the official implementation of [Newton–Cotes Graph Neur
 conda create -n ncgnn python=3.8 # create a new env
 conda install pytorch torchvision torchaudio pytorch-cuda -c pytorch -c nvidia # install torch with cuda
 conda install networkx, pandas # install other packages
-conda matplotlib, seaborn # install other packages for EqMotion
+conda install matplotlib, seaborn # install other packages for EqMotion
 
 ```
 
@@ -47,6 +47,13 @@ python -u spatial_graph/main_ncgnn.py --config_by_file \
 
 ```bash
 cd EqMotion
+
+# generate nobdy datasets
+cd n_body_system/dataset
+python generate_dataset.py --n_balls 5 --simulation charged --num-train 50000
+python generate_dataset.py --n_balls 5 --simulation springs --num-train 50000
+
+cd ../..
 python main_nbody_reasoning.py --ncgnn # run nbody reasoning task
 python main_nbody.py --ncgnn # run nobdy prediction task
 python main_md17.py --mol aspirin --ncgnn # run MD17 (Aspirin) prediction task 
